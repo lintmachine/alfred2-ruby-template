@@ -1,9 +1,11 @@
 # bundle_id = "domain.id"
 # path is the relative path to the workflow in the project root
 ---
+domain: lintmachine.com
+id: xcode-snippets
 path: workflow
-domain: me.zhaowu
-id: alfred2-ruby-template
+
 # If you are using Alfred's advanced Dropbox sync, indicate the path shown in
 # Alfred Preferences > Advanced > Syncing:
 dropbox: ~/Dropbox/Alfred
+

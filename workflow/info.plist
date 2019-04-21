@@ -3,59 +3,146 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>me.zhaowu.alfred2-ruby-template</string>
+	<string>lintmachine.com.xcode-snippets</string>
+	<key>category</key>
+	<string>Tools</string>
 	<key>connections</key>
 	<dict>
+		<key>1FD095CA-6731-4233-8FBD-0669397E73DE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>184FCEAB-25FA-4357-8C28-D9FB2C8CBA11</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>21557827-8003-42B7-A042-16D4C9278FEC</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>42D05639-3F0F-4760-8214-317167E4173D</string>
+				<string>D9591528-0F38-4DC2-AF2E-1BB83CE5EC90</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Copy to Clipboard Only</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>1FD095CA-6731-4233-8FBD-0669397E73DE</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
-		<key>BA17BE41-176A-4E9A-B958-A3F0BEA36829</key>
+		<key>D9591528-0F38-4DC2-AF2E-1BB83CE5EC90</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>42D05639-3F0F-4760-8214-317167E4173D</string>
+				<string>BC8D38F6-ACC9-44E8-BCE0-BA7DCC0108B3</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>Zhao Cai</string>
+	<string>Chris D'Annunzio</string>
 	<key>description</key>
-	<string>A starting place for developing Ruby based workflow in Alfred</string>
+	<string>Search user code snippets from XCode</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Ruby Based Workflow Template</string>
+	<string>XCode Code Snippets</string>
 	<key>objects</key>
 	<array>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>echo "{query}" | ruby decode.rb</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D9591528-0F38-4DC2-AF2E-1BB83CE5EC90</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string></string>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>BC8D38F6-ACC9-44E8-BCE0-BA7DCC0108B3</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>escaping</key>
-				<integer>62</integer>
+				<integer>0</integer>
 				<key>keyword</key>
-				<string>test feedback</string>
+				<string>xc</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>working...</string>
 				<key>script</key>
-				<string>/usr/bin/ruby ./main.rb {query}</string>
+				<string>/usr/bin/env ruby ./main.rb {query} 2&gt; /tmp/alfredlog.txt</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>subtext</key>
-				<string>Ruby Based Workflow Template</string>
+				<string>snippet</string>
 				<key>title</key>
-				<string>Test Alfred Feedback</string>
+				<string>XCode User Code Snippets</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -65,79 +152,98 @@
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>21557827-8003-42B7-A042-16D4C9278FEC</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
+				<key>concurrently</key>
 				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>output</key>
-				<integer>0</integer>
-				<key>removeextension</key>
-				<false/>
-				<key>sticky</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>Ruby Script</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>42D05639-3F0F-4760-8214-317167E4173D</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
 				<key>escaping</key>
-				<integer>63</integer>
-				<key>keyword</key>
-				<string>test rescue feedback</string>
-				<key>runningsubtext</key>
-				<string>...</string>
+				<integer>126</integer>
 				<key>script</key>
-				<string>/usr/bin/ruby ./main_with_rescue_feedback.rb {query}</string>
-				<key>subtext</key>
-				<string>Ruby Based Workflow Template</string>
-				<key>title</key>
-				<string>Test Alfred Rescue Feedback</string>
+				<string>echo "{query}" | ruby decode.rb</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>type</key>
 				<integer>0</integer>
-				<key>withspace</key>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>1FD095CA-6731-4233-8FBD-0669397E73DE</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string></string>
+				<key>transient</key>
 				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
+			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
-			<string>BA17BE41-176A-4E9A-B958-A3F0BEA36829</string>
+			<string>184FCEAB-25FA-4357-8C28-D9FB2C8CBA11</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>184FCEAB-25FA-4357-8C28-D9FB2C8CBA11</key>
+		<dict>
+			<key>xpos</key>
+			<integer>700</integer>
+			<key>ypos</key>
+			<real>440</real>
+		</dict>
+		<key>1FD095CA-6731-4233-8FBD-0669397E73DE</key>
+		<dict>
+			<key>xpos</key>
+			<integer>500</integer>
+			<key>ypos</key>
+			<real>440</real>
+		</dict>
 		<key>21557827-8003-42B7-A042-16D4C9278FEC</key>
 		<dict>
+			<key>xpos</key>
+			<integer>300</integer>
 			<key>ypos</key>
-			<real>250</real>
+			<real>440</real>
 		</dict>
-		<key>42D05639-3F0F-4760-8214-317167E4173D</key>
+		<key>BC8D38F6-ACC9-44E8-BCE0-BA7DCC0108B3</key>
 		<dict>
+			<key>xpos</key>
+			<integer>700</integer>
 			<key>ypos</key>
-			<real>140</real>
+			<real>290</real>
 		</dict>
-		<key>BA17BE41-176A-4E9A-B958-A3F0BEA36829</key>
+		<key>D9591528-0F38-4DC2-AF2E-1BB83CE5EC90</key>
 		<dict>
+			<key>xpos</key>
+			<integer>500</integer>
 			<key>ypos</key>
-			<real>370</real>
+			<real>290</real>
 		</dict>
 	</dict>
+	<key>variables</key>
+	<dict>
+		<key>USER_XCODE_SNIPPETS</key>
+		<string>~/Library/Developer/Xcode/UserData/CodeSnippets</string>
+	</dict>
+	<key>version</key>
+	<string></string>
 	<key>webaddress</key>
-	<string>http://github.com/zhaocai/alfred2-ruby-template</string>
+	<string>http://lintmachine.com</string>
 </dict>
 </plist>
